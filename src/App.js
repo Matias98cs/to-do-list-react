@@ -24,9 +24,13 @@ function App() {
     setTareas(tareas.filter( tarea => tarea.id !== tareaId))
   }
 
+  const borrarTodo = () => {
+    setTareas([])
+  }
+
   return (
     <main className='main-container'>
-      <Formulario crearTarea={crearTarea} />
+      <Formulario crearTarea={crearTarea} borrarTodo={borrarTodo} />
       <Lista tareas={tareas} borrarTarea={borrarTarea}/>
     </main>
   );

@@ -23,7 +23,7 @@
     color: black;
 }
 
-.Formulario-container button {
+.Btn-agregar {
     border-radius: 1rem;
     border: none;
     background-color: #42855B;
@@ -34,7 +34,22 @@
     cursor: pointer;
     font-weight: bold;
 }
-.Formulario-container button:hover {
+.Btn-agregar:hover {
     background-color: #359257;
 }
 
+.Btn-borrar-todo {
+    background-color: red;
+    border-radius: 1rem;
+    border: none;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Btn-borrar-todo:hover {
+    background-color: rgba(255, 0, 0, 0.473);
+}

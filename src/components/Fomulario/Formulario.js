@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BsClipboardPlus } from "react-icons/bs";
 import "./formulario.css";
 
-function Formulario({ crearTarea }) {
+function Formulario({ crearTarea, borrarTodo }) {
   const [titulo, setTitulo] = useState("");
   const [descripcion, setDescripcion] = useState("");
 
@@ -19,6 +19,8 @@ function Formulario({ crearTarea }) {
       setDescripcion("");
     }
   };
+
+
 
   return (
     <div className="Container-form">
@@ -37,8 +39,14 @@ function Formulario({ crearTarea }) {
           onChange={(e) => setDescripcion(e.target.value)}
           value={descripcion}
         ></textarea>
-        <button>
+        <button className="Btn-agregar">
           Guardar
+        </button>
+        <button 
+          className="Btn-borrar-todo"
+          onClick={borrarTodo}
+          >
+          Borrar Todo
         </button>
       </form>
     </div>
