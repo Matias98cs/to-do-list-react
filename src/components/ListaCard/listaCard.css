@@ -1,0 +1,29 @@
+.Card-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+    height: 120px;
+    padding: 2em;
+    border: 1px solid #90B77D;
+    border-radius: 1.5rem;
+    background-color: #42855B;
+}
+
+.Card-container button {
+    border: none;
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 1.5em;
+    background-color: #483838;
+    display: flex;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card-container button:hover{
+    transform: scale(1.2);
+    background-color: red;
+}

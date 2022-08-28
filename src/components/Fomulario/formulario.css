@@ -1,0 +1,40 @@
+.Container-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 2px solid #D2D79F;
+    padding: 1em;
+    border-radius: 1rem;
+}
+.Formulario-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.Formulario-container input, textarea{
+    border: 2px solid #D2D79F;
+    border-radius: .5rem;
+    font-size: 1rem;
+    padding: .5rem;
+    color: black;
+}
+
+.Formulario-container button {
+    border-radius: 1rem;
+    border: none;
+    background-color: #42855B;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+.Formulario-container button:hover {
+    background-color: #359257;
+}
+
